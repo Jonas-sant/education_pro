@@ -9,9 +9,17 @@ class WorkshopController extends Controller
 {
     public function index(){
         $workshops = Workshop::with('classes')->get();
-        $first_class = $workshops->first()->classes->first();
 
-        return view('class',compact('workshops','first_class'));
+        if(isset($workshops) && count($workshops) >= 0){
+            if($workshops->first()){
+                $first_class = $workshops->first()->classes->first();
+                return view('class',compact('workshops','first_class'));
+            }
+
+            return view('class',compact('workshops'));
+        }
+
+
     }
 
     public function classVideo($id){
