@@ -1,4 +1,5 @@
-<div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-purple-700" style="background-image: url({{asset('img/background-lg.png')}});background-size:cover;">
+<link rel="stylesheet" href="{{asset('css/bg-style.css')}}">
+<div class="background-login min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-purple-700">
     <div>
         {{ $logo }}
     </div>

@@ -1,0 +1,16 @@
+
+    @media (max-width: 600px){
+        .background-login{
+            padding-top:20%;
+            background-image: url(../img/background-mobile-inferior-direito.png);
+            background-size:cover;
+        }
+    }
+    @media(min-width:610px){
+        .background-login{
+            background-image: url(../img/background-lg.png);
+            background-size:cover;
+        }
+    }
+
+
